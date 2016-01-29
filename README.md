@@ -1,7 +1,7 @@
 # Protocol-Oriented-Programming
 This is a repo with an Xcode playground that has some of the basics of protocol oriented programming in Swift 2.x
 
-# Articles Used in creating this Playground
+### Articles Used in creating this Playground
 
 * WWDC Protocol Oriented Programming
     * <https://developer.apple.com/videos/play/wwdc2015-408/>
