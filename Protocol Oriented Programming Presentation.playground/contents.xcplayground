@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Table of Contents'/>
+        <page name='What is a Protocol'/>
+        <page name='Protocol Basics Pre-Swift 2.0'/>
+        <page name='Objected Oriented Example'/>
+        <page name='Protocol Oriented Example'/>
+        <page name='Protocol Associated Types'/>
+        <page name='Testing Made Simple With Protocols'/>
+        <page name='The Wrap Up'/>
+    </pages>
+</playground>
