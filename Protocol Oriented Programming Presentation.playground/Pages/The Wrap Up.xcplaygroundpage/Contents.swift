@@ -44,20 +44,15 @@
     * <http://blog.eliperkins.me/mocks-in-swift-via-protocols>
 
 
-* Java 8 Default Interface Methods
-    * <https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html>
-
-
 * Working with Mixins in Ruby
     * <http://culttt.com/2015/07/08/working-with-mixins-in-ruby/>
 
 
 * Swift 2.0 is now better than Objective-C
     * <http://blog.db-in.com/swift-2-0-is-now-better-than-objective-c/>
-*/
 
-//: [Table of Contents](Table%20of%20Contents)
+[Table of Contents](Table%20of%20Contents)
 
-/*:
 # Show the Game Framework
+ 
 */

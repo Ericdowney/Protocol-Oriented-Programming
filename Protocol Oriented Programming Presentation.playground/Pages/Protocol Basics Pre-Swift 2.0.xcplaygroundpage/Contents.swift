@@ -1,14 +1,13 @@
-//: [Previous](@previous)
-
-import UIKit
-
 /*:
+ [Previous](@previous)
+ 
 ## Protocol Basics: Pre-Swift 2.0
 
     Delegates
     Table View Data Source / Delegate
 
 */
+import UIKit
 
 protocol MyProtocol {
     func myMethod() -> String
@@ -23,7 +22,6 @@ class MyNotUsedClass: MyProtocol {
 MyNotUsedClass().myMethod()
 
 //:#### Your normal delegate pattern
-
 //: > 1: MyActionDelegate protocol has been defined
 protocol MyActionDelegate {
     func actionOccurred() -> String
@@ -42,9 +40,9 @@ class SomeUIElement {
 class MyClass: MyActionDelegate {
     var uiInstance: SomeUIElement?
     
+//: > 5: This instance of MyClass is now the delegate for the UI element
     func initialize(element: SomeUIElement) {
         self.uiInstance = element
-//: > 5: This instance of MyClass is now the delegate for the UI element
         self.uiInstance?.delegate = self
     }
     

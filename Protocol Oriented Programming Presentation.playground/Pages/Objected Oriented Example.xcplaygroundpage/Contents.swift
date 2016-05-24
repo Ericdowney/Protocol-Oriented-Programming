@@ -1,8 +1,6 @@
-//: [Previous](@previous)
-
-import UIKit
-
 /*:
+ [Previous](@previous)
+ 
 ## Objected Oriented Example
 
 * Our Mission
@@ -78,14 +76,11 @@ eric.smell("pie")
 /*:
 ## Uh-Oh!
 
-Now the clients wants to add aliens with mind powers and ears, eyes, and noses
+Now the clients wants to add aliens with mind powers
 
 class Alien: ? {
 
 }
 
+[Next](@next)
 */
-
-let img = UIImage(named: "Mole.jpg")
-
-//: [Next](@next)

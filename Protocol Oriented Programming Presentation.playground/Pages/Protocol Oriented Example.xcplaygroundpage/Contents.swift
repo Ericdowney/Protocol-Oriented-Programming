@@ -1,14 +1,16 @@
-//: [Previous](@previous)
-
-import Foundation
-
 /*:
+ [Previous](@previous)
+ 
 ## Protocol Oriented Example
-
-    "If you're subclassing, then you're doing it wrong!"
+ 
+### Quote:
+ ---
+#### "If you're subclassing, then you're doing it wrong!"
+ ---
 
 
 \- Hector Matos
+ \- <http://krakendev.io/blog/subclassing-can-suck-and-heres-why>
 
 * Now lets look at the exact same example with protocols
 * How do we think in a protocol oriented way?
@@ -90,15 +92,10 @@ newEric.smell("cake")
 /*:
 ## Now the Best thing ever!
 
-    protocol extensions
+### Protocol Extensions
 
 */
 
-extension Alive {
-    var alive: Bool {
-        return true
-    }
-}
 
 extension Ears {
     func listen() -> String {
@@ -155,7 +152,7 @@ finalEric.smell("Cremé Brulee")
 /*:
 ## Now lets get an alien in here
 
-    Remember the Mind Powers!
+> Remember the Mind Powers!
 
 */
 
@@ -183,7 +180,7 @@ anAlien.mindPower()
 /*:
 ## Advanced Protocol Extensions
 
-* the where and Self keywords
+> the where and Self keywords
 
 */
 
@@ -203,31 +200,10 @@ extension Nose where Self: Strong {
 
 //:##### Uncomment this line for cool stuff
 
-extension Person: Strong {}
-
+//extension Person: Strong {}
 
 let superEric = Person(name: "Super Eric", age: 25)
 
 superEric.smell("something")
-
-
-/*:
-
-#### Let's take a look back at our java example
-
-* Java Interface vs Swift Protocol
-    * Java
-        * Defines methods to be implemented
-    * Java 8
-        * Can provide default implementation to interface methods
-    * Swift
-        * Defines methods to be implemented
-        * Deals with references vs value types
-        * mutating keyword
-        * Protocols can be given a default implementation via extensions
-        * Protocols can inherit from other protocols
-        * Protocol Composition protocol<A, B>
-
-*/
 
 //: [Next](@next)

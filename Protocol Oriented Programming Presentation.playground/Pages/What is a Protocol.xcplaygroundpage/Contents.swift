@@ -1,8 +1,6 @@
-//: [Previous](@previous)
-
-import Foundation
-
 /*:
+ [Previous](@previous)
+ 
 ## What is a Protocol?
 
 A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality <https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html>
@@ -20,10 +18,6 @@ A protocol defines a blueprint of methods, properties, and other requirements th
             // Do something cool here.
         }
     }
-
-
-
-    A reimplementation of Java's ActionListener Interface in Swift
 */
 
 struct ActionEvent {}
@@ -40,6 +34,5 @@ class MyClass1: ActionListener {
 
 /*:
 ## Is this really what we want?
+ [Next](@next)
 */
-
-//: [Next](@next)

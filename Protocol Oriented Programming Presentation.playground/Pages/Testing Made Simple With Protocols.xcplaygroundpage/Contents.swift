@@ -1,8 +1,8 @@
-//: [Previous](@previous)
-
-import Foundation
+import XCTest
 
 /*:
+ [Previous](@previous)
+ 
 ## Testing made Simple with Protocols
 
 Scenario:
@@ -10,8 +10,6 @@ Scenario:
 
 
 */
-
-
 struct User {}
 
 /*:
@@ -24,8 +22,6 @@ class MyModel1 {
         }
     }
 }
-
-import XCTest
 
 /*:
 ### What do we Assert on?

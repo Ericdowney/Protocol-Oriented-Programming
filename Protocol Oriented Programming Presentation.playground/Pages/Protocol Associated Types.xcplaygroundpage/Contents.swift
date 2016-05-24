@@ -1,24 +1,22 @@
-//: [Previous](@previous)
-
-import UIKit
-
 /*:
+ [Previous](@previous)
+ 
 ## Protocol Associated Types
 
-*/
-
-/*:
 #### Generic Element Container Protocol
+#### Mutability
+
+Reference Types vs Value Types
 */
 protocol ElementContainer {
-    typealias Type
+    associatedtype Type
     var elements: [Type] { get set }
-    mutating func add(element: Type)
+    mutating func add(elements: [Type])
 }
 
 extension ElementContainer {
-    mutating func add(element: Type) {
-        self.elements.append(element)
+    mutating func add(elements: [Type]) {
+        self.elements += elements
     }
 }
 
@@ -38,11 +36,13 @@ struct IntContainer: ElementContainer {
 
 /*:
 #### Generic Element Container Implemented
-
-    This essentially reimplements Array
 */
 struct Container<T>: ElementContainer {
     var elements: [T]
+    init(elements: T...) {
+        self.elements = []
+        self.add(elements)
+    }
 }
 
 struct SomeObject {
@@ -61,13 +61,7 @@ container1.elements
 let container2 = Container(elements: [1, 2])
 container2.elements
 
-let container3 = Container(elements: [SomeObject(name: "Eric"), SomeObject(name: "Scott"), SomeObject(name: "Holden"), SomeObject(name: "Bobby"), SomeObject(name: "Matt")])
+let container3 = Container(elements: SomeObject(name: "Eric"), SomeObject(name: "Scott"), SomeObject(name: "Holden"), SomeObject(name: "Bobby"), SomeObject(name: "Matt"))
 container3.elements
-
-/*:
-#### Mutability
-
-    Reference Types vs Value Types
-*/
 
 //: [Next](@next)
